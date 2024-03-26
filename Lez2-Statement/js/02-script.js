@@ -25,3 +25,5 @@ if(punteggio >= 18){
 //Operatore Ternario
 //Condizione       viene eseguito quando la cond è TRUE        viene eseguito quando la cond è FALSE
 (punteggio >= 18)? console.log("BRavo, hai superato l'esame"): console.log("Mi spiace, esame non superato");
+
+

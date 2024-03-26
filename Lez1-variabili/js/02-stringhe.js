@@ -16,6 +16,7 @@ console.log(url, nomeLibro);
     \r  a capo
 */
 
+
 // Un'alternativa è quella di usare gli apici singoli per dichiarare la stringa e usare gli apici doppi dove servono all'interno della stringa o viceversa
 let quote = 'Ieri mi ha detto solo "Ciao!"';
 console.log(quote);
@@ -53,7 +54,7 @@ console.log(firstLetterOfFirstName);
 
 // È possibile ricavare l'ultimo carattere di una stringa anche se non se ne conosce la lunghezza esatta
 let nome = "Allen";
-let lastLetterOfName = nome[nome.length - 1]; // -1 perché si parte a contare da 0
+let lastLetterOfName = nome[nome.length - 2]; // -1 perché si parte a contare da 0
 console.log(lastLetterOfName);
 
 /* ----------------------------- Metodi stringhe ---------------------------- */
@@ -81,18 +82,19 @@ console.log(taglio1);
 
 let taglio2 = testo.substring(4, 10);
 console.log(taglio2);
-
+let taglio3 = testo.substring(11, 20);
+console.log(taglio3);
 // Metodi per sostituzione
 let affermazione = "Il miglior browser del mondo è Internet Explorer";
 
 // Il metodo replace() restituisce una nuova stringa rimpiazzzando tutte le ricorrenze del pattern dato con una sostituzione
 let sost = affermazione.replace("Internet Explorer", "Google Chrome");
 console.log(sost);
-
+let sost1 = affermazione.replace("Internet Explorer","Proviamo");
+console.log(sost1);
 // Il metodo toUpperCase() converte tutti i caratteri in maiuscolo
 let upp = affermazione.toUpperCase();
 console.log(upp);
-
 // Il metodo toLowerCase() converte tutti i caratteri in minuscolo
 let low = affermazione.toLowerCase();
 console.log(low);
@@ -122,6 +124,14 @@ console.log(string3);
 // Data una stringa, stamparla in console al contrario
 // Punti in più se risolta in 2 righe max compreso il console.log
 let strEs = "I topi non avevano nipoti";
+let strEs1 = strEs.split("");
+let strEs2 = strEs1.reverse();
+console.log(strEs2);
+let strEs3 = strEs2.join(" ");
+console.log(strEs3);
+
+    
+
 
 /* ------------------------------- Esercizio 2 ------------------------------ */
 // Elabora uno script per estrarre l'estensione di un file
